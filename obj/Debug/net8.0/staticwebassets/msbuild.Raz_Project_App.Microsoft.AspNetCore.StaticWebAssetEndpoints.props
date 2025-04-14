@@ -1,0 +1,28 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/Raz_Project_App/app.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\app.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-yFyZ\u002BrjqH1jXSq08ZpPCRsaohJQjIIs/oxYpq15E\u002BlI="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3113"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022yFyZ\u002BrjqH1jXSq08ZpPCRsaohJQjIIs/oxYpq15E\u002BlI=\u0022"},{"Name":"Last-Modified","Value":"Mon, 14 Apr 2025 22:07:44 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Raz_Project_App/app.o8sp8kzl06.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\app.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"o8sp8kzl06"},{"Name":"integrity","Value":"sha256-yFyZ\u002BrjqH1jXSq08ZpPCRsaohJQjIIs/oxYpq15E\u002BlI="},{"Name":"label","Value":"_content/Raz_Project_App/app.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3113"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022yFyZ\u002BrjqH1jXSq08ZpPCRsaohJQjIIs/oxYpq15E\u002BlI=\u0022"},{"Name":"Last-Modified","Value":"Mon, 14 Apr 2025 22:07:44 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Raz_Project_App/Raz_Project_App.bundle.scp.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Raz_Project_App.nqifamr9qu.bundle.scp.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-n14e6JVHG\u002BR0ouhRb/VMuizzOscHF3SNaDMFPdX6wmw="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"506"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022n14e6JVHG\u002BR0ouhRb/VMuizzOscHF3SNaDMFPdX6wmw=\u0022"},{"Name":"Last-Modified","Value":"Mon, 14 Apr 2025 16:14:54 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Raz_Project_App/Raz_Project_App.nqifamr9qu.bundle.scp.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Raz_Project_App.nqifamr9qu.bundle.scp.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"nqifamr9qu"},{"Name":"integrity","Value":"sha256-n14e6JVHG\u002BR0ouhRb/VMuizzOscHF3SNaDMFPdX6wmw="},{"Name":"label","Value":"_content/Raz_Project_App/Raz_Project_App.bundle.scp.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"506"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022n14e6JVHG\u002BR0ouhRb/VMuizzOscHF3SNaDMFPdX6wmw=\u0022"},{"Name":"Last-Modified","Value":"Mon, 14 Apr 2025 16:14:54 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>

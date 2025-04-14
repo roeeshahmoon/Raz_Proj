@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\Raz_Project_App\\Raz_Project_App\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Raz_Project_App.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Raz_Project_App.nqifamr9qu.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\Raz_Project_App\\Raz_Project_App\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Raz_Project_App.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Raz_Project_App.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Raz_Project_App.props",
+      "PackagePath": "build\\Raz_Project_App.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Raz_Project_App.props",
+      "PackagePath": "buildMultiTargeting\\Raz_Project_App.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Raz_Project_App.props",
+      "PackagePath": "buildTransitive\\Raz_Project_App.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

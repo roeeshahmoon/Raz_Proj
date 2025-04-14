@@ -1,0 +1,331 @@
+{
+  "Version": 1,
+  "Hash": "KZg7Dslho342usOiRkhztBeDCMBWnBlZH9lScJ96SNQ=",
+  "Source": "Raz_Project_App",
+  "BasePath": "_content/Raz_Project_App",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Raz_Project_App\\wwwroot",
+      "Source": "Raz_Project_App",
+      "ContentRoot": "C:\\Users\\User\\source\\repos\\Raz_Project_App\\Raz_Project_App\\wwwroot\\",
+      "BasePath": "_content/Raz_Project_App",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\User\\source\\repos\\Raz_Project_App\\Raz_Project_App\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Raz_Project_App.styles.css",
+      "SourceId": "Raz_Project_App",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\User\\source\\repos\\Raz_Project_App\\Raz_Project_App\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "BasePath": "_content/Raz_Project_App",
+      "RelativePath": "Raz_Project_App#[.{fingerprint}]?.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "Fingerprint": "nqifamr9qu",
+      "Integrity": "n14e6JVHG+R0ouhRb/VMuizzOscHF3SNaDMFPdX6wmw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\User\\source\\repos\\Raz_Project_App\\Raz_Project_App\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Raz_Project_App.styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\User\\source\\repos\\Raz_Project_App\\Raz_Project_App\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Raz_Project_App.bundle.scp.css",
+      "SourceId": "Raz_Project_App",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\User\\source\\repos\\Raz_Project_App\\Raz_Project_App\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "BasePath": "_content/Raz_Project_App",
+      "RelativePath": "Raz_Project_App#[.{fingerprint}]!.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "Fingerprint": "nqifamr9qu",
+      "Integrity": "n14e6JVHG+R0ouhRb/VMuizzOscHF3SNaDMFPdX6wmw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\User\\source\\repos\\Raz_Project_App\\Raz_Project_App\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Raz_Project_App.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\User\\source\\repos\\Raz_Project_App\\Raz_Project_App\\wwwroot\\app.css",
+      "SourceId": "Raz_Project_App",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\source\\repos\\Raz_Project_App\\Raz_Project_App\\wwwroot\\",
+      "BasePath": "_content/Raz_Project_App",
+      "RelativePath": "app#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "o8sp8kzl06",
+      "Integrity": "yFyZ+rjqH1jXSq08ZpPCRsaohJQjIIs/oxYpq15E+lI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\app.css"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "app.css",
+      "AssetFile": "C:\\Users\\User\\source\\repos\\Raz_Project_App\\Raz_Project_App\\wwwroot\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3113"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yFyZ+rjqH1jXSq08ZpPCRsaohJQjIIs/oxYpq15E+lI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 22:07:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yFyZ+rjqH1jXSq08ZpPCRsaohJQjIIs/oxYpq15E+lI="
+        }
+      ]
+    },
+    {
+      "Route": "app.o8sp8kzl06.css",
+      "AssetFile": "C:\\Users\\User\\source\\repos\\Raz_Project_App\\Raz_Project_App\\wwwroot\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3113"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yFyZ+rjqH1jXSq08ZpPCRsaohJQjIIs/oxYpq15E+lI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 22:07:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "o8sp8kzl06"
+        },
+        {
+          "Name": "label",
+          "Value": "app.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yFyZ+rjqH1jXSq08ZpPCRsaohJQjIIs/oxYpq15E+lI="
+        }
+      ]
+    },
+    {
+      "Route": "Raz_Project_App.bundle.scp.css",
+      "AssetFile": "C:\\Users\\User\\source\\repos\\Raz_Project_App\\Raz_Project_App\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Raz_Project_App.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "506"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"n14e6JVHG+R0ouhRb/VMuizzOscHF3SNaDMFPdX6wmw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 16:14:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-n14e6JVHG+R0ouhRb/VMuizzOscHF3SNaDMFPdX6wmw="
+        }
+      ]
+    },
+    {
+      "Route": "Raz_Project_App.nqifamr9qu.bundle.scp.css",
+      "AssetFile": "C:\\Users\\User\\source\\repos\\Raz_Project_App\\Raz_Project_App\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Raz_Project_App.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "506"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"n14e6JVHG+R0ouhRb/VMuizzOscHF3SNaDMFPdX6wmw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 16:14:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nqifamr9qu"
+        },
+        {
+          "Name": "label",
+          "Value": "Raz_Project_App.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-n14e6JVHG+R0ouhRb/VMuizzOscHF3SNaDMFPdX6wmw="
+        }
+      ]
+    },
+    {
+      "Route": "Raz_Project_App.nqifamr9qu.styles.css",
+      "AssetFile": "C:\\Users\\User\\source\\repos\\Raz_Project_App\\Raz_Project_App\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Raz_Project_App.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "506"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"n14e6JVHG+R0ouhRb/VMuizzOscHF3SNaDMFPdX6wmw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 16:14:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nqifamr9qu"
+        },
+        {
+          "Name": "label",
+          "Value": "Raz_Project_App.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-n14e6JVHG+R0ouhRb/VMuizzOscHF3SNaDMFPdX6wmw="
+        }
+      ]
+    },
+    {
+      "Route": "Raz_Project_App.styles.css",
+      "AssetFile": "C:\\Users\\User\\source\\repos\\Raz_Project_App\\Raz_Project_App\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Raz_Project_App.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "506"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"n14e6JVHG+R0ouhRb/VMuizzOscHF3SNaDMFPdX6wmw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 16:14:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-n14e6JVHG+R0ouhRb/VMuizzOscHF3SNaDMFPdX6wmw="
+        }
+      ]
+    }
+  ]
+}

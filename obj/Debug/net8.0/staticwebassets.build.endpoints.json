@@ -1,0 +1,170 @@
+{
+  "Version": 1,
+  "ManifestType": "Build",
+  "Endpoints": [
+    {
+      "Route": "Raz_Project_App.nqifamr9qu.styles.css",
+      "AssetFile": "Raz_Project_App.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "506"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"n14e6JVHG+R0ouhRb/VMuizzOscHF3SNaDMFPdX6wmw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 16:14:54 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nqifamr9qu"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-n14e6JVHG+R0ouhRb/VMuizzOscHF3SNaDMFPdX6wmw="
+        },
+        {
+          "Name": "label",
+          "Value": "Raz_Project_App.styles.css"
+        }
+      ]
+    },
+    {
+      "Route": "Raz_Project_App.styles.css",
+      "AssetFile": "Raz_Project_App.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "506"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"n14e6JVHG+R0ouhRb/VMuizzOscHF3SNaDMFPdX6wmw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 16:14:54 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-n14e6JVHG+R0ouhRb/VMuizzOscHF3SNaDMFPdX6wmw="
+        }
+      ]
+    },
+    {
+      "Route": "app.css",
+      "AssetFile": "app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3113"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yFyZ+rjqH1jXSq08ZpPCRsaohJQjIIs/oxYpq15E+lI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 22:07:44 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yFyZ+rjqH1jXSq08ZpPCRsaohJQjIIs/oxYpq15E+lI="
+        }
+      ]
+    },
+    {
+      "Route": "app.o8sp8kzl06.css",
+      "AssetFile": "app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3113"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yFyZ+rjqH1jXSq08ZpPCRsaohJQjIIs/oxYpq15E+lI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 22:07:44 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "o8sp8kzl06"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yFyZ+rjqH1jXSq08ZpPCRsaohJQjIIs/oxYpq15E+lI="
+        },
+        {
+          "Name": "label",
+          "Value": "app.css"
+        }
+      ]
+    }
+  ]
+}

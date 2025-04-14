@@ -1,0 +1,98 @@
+﻿@page "/game"
+@inject NavigationManager Nav
+@using System
+
+<h1 class="text-center mb-4">Tic Tac Toe</h1>
+
+<table class="game-board">
+    @for (int i = 0; i < 3; i++)
+    {
+        <tr>
+            @for (int j = 0; j < 3; j++)
+            {
+                var row = i;
+                var col = j;
+                <td @onclick="() => MakeMove(row, col)">
+                    @(board[row, col] ?? "")
+                </td>
+            }
+        </tr>
+    }
+</table>
+
+<p class="text-center fw-bold fs-5">@status</p>
+
+<div class="d-flex flex-column align-items-center">
+    <button class="reset-button btn btn-success" @onclick="ResetGame">🔄 Reset Game</button>
+    <button class="back-home btn btn-outline-primary" @onclick="NavigateHome">🏠 Back Home</button>
+</div>
+
+@code {
+    private string[,] board = new string[3, 3];
+    private string currentPlayer = "X";
+    private string status = "Player X's turn";
+    private bool gameOver = false;
+
+    private void MakeMove(int row, int col)
+    {
+        if (row < 0 || row >= 3 || col < 0 || col >= 3)
+            return;
+
+        if (gameOver || !string.IsNullOrEmpty(board[row, col]))
+            return;
+
+        board[row, col] = currentPlayer;
+
+        if (CheckWin(currentPlayer))
+        {
+            status = $"Player {currentPlayer} wins!";
+            gameOver = true;
+        }
+        else if (IsDraw())
+        {
+            status = "It's a draw!";
+            gameOver = true;
+        }
+        else
+        {
+            currentPlayer = currentPlayer == "X" ? "O" : "X";
+            status = $"Player {currentPlayer}'s turn";
+        }
+    }
+
+    private bool CheckWin(string player)
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            if ((board[i, 0] == player && board[i, 1] == player && board[i, 2] == player) ||
+                (board[0, i] == player && board[1, i] == player && board[2, i] == player))
+                return true;
+        }
+
+        return (board[0, 0] == player && board[1, 1] == player && board[2, 2] == player) ||
+               (board[0, 2] == player && board[1, 1] == player && board[2, 0] == player);
+    }
+
+    private bool IsDraw()
+    {
+        foreach (var cell in board)
+        {
+            if (string.IsNullOrEmpty(cell))
+                return false;
+        }
+        return true;
+    }
+
+    private void ResetGame()
+    {
+        board = new string[3, 3];
+        currentPlayer = "X";
+        status = "Player X's turn";
+        gameOver = false;
+    }
+
+    private void NavigateHome()
+    {
+        Nav.NavigateTo("/");
+    }
+}

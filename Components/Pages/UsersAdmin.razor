@@ -1,0 +1,81 @@
+﻿@page "/users"
+@using Raz_Project_App
+@using Raz_Project_App.Models
+@using Raz_Project_App.Services
+@inject UserService MyUserService
+
+<h1>User Management of Raz Website</h1>
+
+<h3>Add User</h3>
+<div class="mb-3">
+    <input @bind="newUser.UserName" placeholder="UserName" class="form-control mb-2" />
+    <input @bind="newUser.Email" placeholder="Email" class="form-control mb-2" />
+    <input @bind="newUser.Password" placeholder="Password" class="form-control mb-2" />
+    <button class="btn btn-primary" @onclick="AddUser">Add</button>
+</div>
+
+@if (users == null)
+{
+    <h1><em>Loading...</em></h1>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>UserName</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (User user in users)
+            {
+                <tr>
+                    <td>@user.Id</td>
+                    <td>@user.UserName</td>
+                    <td>@user.Email</td>
+                    <td>@user.Password</td>
+                    <td>
+                        <button class="btn btn-danger btn-sm" @onclick="() => DeleteUser(user.Id)">Delete</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<User>? users;
+    private User newUser = new User();
+
+    protected override void OnInitialized()
+    {
+        LoadUsers();
+    }
+
+    private void LoadUsers()
+    {
+        users = MyUserService.GetUsers();
+    }
+
+    private void AddUser()
+    {
+        if (!string.IsNullOrWhiteSpace(newUser.Email) &&
+            !string.IsNullOrWhiteSpace(newUser.UserName) &&
+            !string.IsNullOrWhiteSpace(newUser.Password))
+        {
+            MyUserService.AddUser(newUser);
+            newUser = new User(); // Reset input
+            LoadUsers(); // Refresh list
+        }
+    }
+
+    private void DeleteUser(int id)
+    {
+        MyUserService.DeleteUser(id);
+        LoadUsers();
+    }
+}

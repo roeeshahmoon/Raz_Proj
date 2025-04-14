@@ -1,0 +1,28 @@
+﻿@page "/"
+@using Microsoft.AspNetCore.Components
+
+<PageTitle>Home</PageTitle>
+
+<div class="home-container text-center d-flex flex-column justify-content-center align-items-center vh-100">
+    <h1 class="display-3 fw-bold text-primary mb-3 animate-fade">Welcome to Raz Shahmoon Game Project 🎉</h1>
+    <p class="lead text-muted mb-4">This is my Blazor app – built with My ❤ Brother and C#.</p>
+
+    <div class="card shadow-lg p-4 mb-4 bg-light rounded-4 w-75">
+        <p class="mb-3 fs-5">Use the navigation menu to:</p>
+        <ul class="list-unstyled mb-4">
+            <li>🔐 <strong>Login</strong> to your account</li>
+            <li>📝 <strong>Register</strong> as a new user</li>
+            <li>🎮 <strong>Play the game!</strong></li>
+            <li>👥 <strong>Users</strong> played the game</li>
+
+
+        </ul>
+        <div>
+            <NavLink href="/login" class="btn btn-primary me-2">🔐 Login</NavLink>
+            <NavLink href="/register" class="btn btn-outline-success me-2">📝 Register</NavLink>
+            <NavLink href="/game" class="btn btn-warning">🎮 Play Game</NavLink>
+            <NavLink href="/users" class="nav-link">👥 Users</NavLink>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,102 @@
+﻿@page "/login"
+@using Raz_Project_App.Models
+@using Raz_Project_App.Services
+
+@inject UserService MyUserService
+@inject NavigationManager NavManager
+
+<div class="d-flex justify-content-center align-items-center vh-100 bg-light">
+    <div class="card shadow-lg p-4" style="width: 100%; max-width: 400px;">
+        <h3 class="text-center mb-4">@(isLogin ? "Login to Raz Game 🎮" : "Register to Join 🎉")</h3>
+
+        @if (isLogin)
+        {
+            <EditForm Model="@loginUser" OnValidSubmit="HandleLogin">
+                <DataAnnotationsValidator />
+                <ValidationSummary />
+
+                @if (!string.IsNullOrEmpty(loginErrorMessage))
+                {
+                    <div class="alert alert-danger">@loginErrorMessage</div>
+                }
+
+                <div class="mb-3">
+                    <label class="form-label">Username:</label>
+                    <InputText @bind-Value="loginUser.UserName" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Password:</label>
+                    <InputText @bind-Value="loginUser.Password" type="password" class="form-control" />
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100 mb-3">🔐 Login</button>
+                <div class="text-center">
+                    <span>Don't have an account?</span>
+                    <a href="login" @onclick="() => isLogin = false"> Register here</a>
+                </div>
+            </EditForm>
+        }
+        else
+        {
+            <EditForm Model="@registerUser" OnValidSubmit="HandleRegister">
+                <DataAnnotationsValidator />
+                <ValidationSummary />
+
+                <div class="mb-3">
+                    <label class="form-label">Username:</label>
+                    <InputText @bind-Value="registerUser.UserName" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Email:</label>
+                    <InputText @bind-Value="registerUser.Email" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Password:</label>
+                    <InputText @bind-Value="registerUser.Password" type="password" class="form-control" />
+                </div>
+
+                <button type="submit" class="btn btn-success w-100 mb-3">📝 Register</button>
+                <div class="text-center">
+                    <span>Already have an account?</span>
+                    <a href="login" @onclick="() => isLogin = true"> Login here</a>
+                </div>
+            </EditForm>
+        }
+    </div>
+</div>
+
+@code {
+    private bool isLogin = false;
+
+    private User loginUser = new();
+    private User registerUser = new();
+
+    private string? loginErrorMessage = null;
+
+    private async Task HandleLogin()
+    {
+        var users = MyUserService.GetUsers();
+        var found = users.FirstOrDefault(u =>
+            u.UserName == loginUser.UserName &&
+            u.Password == loginUser.Password);
+
+        if (found != null)
+        {
+            loginErrorMessage = "Login successful";
+            Console.WriteLine("Login successful");
+            NavManager.NavigateTo("/game");
+        }
+        else
+        {
+            loginErrorMessage = "Wrong username or password. Please try again.";
+            Console.WriteLine("Invalid login");
+        }
+    }
+
+    private async Task HandleRegister()
+    {
+        MyUserService.AddUser(registerUser);
+        Console.WriteLine("User registered");
+        isLogin = true;
+    }
+}

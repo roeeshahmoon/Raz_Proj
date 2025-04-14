@@ -1,0 +1,46 @@
+﻿@page "/register"
+@using Raz_Project_App.Models
+@using Raz_Project_App.Services
+@inject UserService MyUserService
+@inject NavigationManager NavManager
+
+<div class="d-flex justify-content-center align-items-center vh-100 bg-light">
+    <div class="card shadow-lg p-4" style="width: 100%; max-width: 400px;">
+        <h3 class="text-center mb-4">📝 Register to Raz Project</h3>
+
+        <EditForm Model="@newUser" OnValidSubmit="HandleRegister">
+            <DataAnnotationsValidator />
+            <ValidationSummary />
+
+            <div class="mb-3">
+                <label class="form-label">Username:</label>
+                <InputText @bind-Value="newUser.UserName" class="form-control" />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Email:</label>
+                <InputText @bind-Value="newUser.Email" class="form-control" />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Password:</label>
+                <InputText @bind-Value="newUser.Password" type="password" class="form-control" />
+            </div>
+
+            <button type="submit" class="btn btn-success w-100 mb-2">📝 Register</button>
+            <div class="text-center">
+                <span>Already have an account?</span>
+                <a href="/login"> Login here</a>
+            </div>
+        </EditForm>
+    </div>
+</div>
+
+@code {
+    private User newUser = new();
+
+    private async Task HandleRegister()
+    {
+        MyUserService.AddUser(newUser);
+        Console.WriteLine("User registered successfully");
+        NavManager.NavigateTo("/login");
+    }
+}

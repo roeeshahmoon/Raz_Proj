@@ -1,5 +1,7 @@
 ﻿@page "/"
 @using Microsoft.AspNetCore.Components
+@inject NavigationManager Nav
+
 
 <PageTitle>Home</PageTitle>
 
@@ -17,12 +19,53 @@
 
 
         </ul>
-        <div>
-            <NavLink href="/login" class="btn btn-primary me-2">🔐 Login</NavLink>
-            <NavLink href="/register" class="btn btn-outline-success me-2">📝 Register</NavLink>
-            <NavLink href="/game" class="btn btn-warning">🎮 Play Game</NavLink>
-            <NavLink href="/users" class="nav-link">👥 Users</NavLink>
-
+        <div class="d-flex flex-column align-items-center">
+            <button class="reset-button btn btn-success" @onclick="LoginPage">🔐 Login</button>
+            <button class="back-home btn btn-outline-primary" @onclick="RegisterPage">📝 Register</button>
+            <button class="back-home btn btn-outline-primary" @onclick="PlayPage">🎮 Play Game</button>
+            <button class="back-home btn btn-outline-primary" @onclick="UserPage">👥 Users </button>
         </div>
     </div>
+
+    <div class="card shadow-lg p-3 bg-white rounded-4 w-50 mt-3" style="max-width: 500px;">
+        <div class="row g-2 align-items-center">
+            <div class="col-4">
+                <img src="Images/raz.jpeg" alt="Raz Shahmoon" class="img-fluid rounded-4 shadow-sm" style="max-width: 250px;" />
+            </div>
+            <div class="col-8 text-start">
+                <h5 class="fw-bold text-primary mb-2">Meet Raz Shahmoon</h5>
+                <p class="fs-6 mb-0">
+                    Raz is 16 years old and lives in Tel Aviv. He's a big fan of Maccabi Tel Aviv and loves programming.
+                    He studies at Tichonnet High School and enjoys building cool apps like this one.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
 </div>
+
+@code{
+
+    private void LoginPage()
+    {
+        Nav.NavigateTo("/login");
+    }
+
+    private void RegisterPage()
+    {
+        Nav.NavigateTo("/register");
+    }
+
+    private void PlayPage()
+    {
+        Nav.NavigateTo("/game");
+    }
+
+    private void UserPage()
+    {
+        Nav.NavigateTo("/users");
+    }
+
+
+}
